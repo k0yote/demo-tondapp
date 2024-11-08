@@ -3,6 +3,7 @@ import zod from "zod";
 export const CreateJettonRequest = zod.object({
   name: zod.string(),
   description: zod.string(),
+  image: zod.string(),
   image_data: zod.string(),
   symbol: zod.string(),
   decimals: zod.number(),
